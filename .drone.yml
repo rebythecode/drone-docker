@@ -1,7 +1,9 @@
 pipeline:
   build:
-    image: eu.gcr.io/kernel-prod/drone-docker
-    prefix: eu.gcr.io/kernel-prod
+    image: gcr.io/kernel-payments/drone-docker:8707c78f3cdc4e1123d635b05f141cda975399f8
+    prefix: eu.gcr.io/reby-cloud/drone
+    flavor: docker
+    dir: docker
     tag_latest: true
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
